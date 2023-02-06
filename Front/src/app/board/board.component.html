@@ -1,0 +1,33 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="main">
+  <button class="button">
+    <i class="fa fa-play" aria-hidden="true"(click)="run()"></i>
+  </button>
+  <input [(ngModel)]="products" type="number" class="input" min="1" max="100" >
+
+
+  <button class="button">
+    <i class="fa fa-reply" aria-hidden="true"(click)="replay()"></i>
+  </button>
+  <button class="button">
+    <i class="fa fa-refresh" aria-hidden="true" (click)="clear()"></i>
+  </button>
+  <button class="button">
+    <i class="fa fa-gears" aria-hidden="true" (click)="rect()"></i>
+  </button>
+  <button class="button" (click)="circle()">
+    <i class="fa fa-list" aria-hidden="true"></i>
+  </button>
+  <button class="button">
+    <i class="fa fa-arrow-right" aria-hidden="true"(click)="line()"></i>
+  </button>
+</div>
+<div class="container" id="container">
+
+</div>
+
+</body>
